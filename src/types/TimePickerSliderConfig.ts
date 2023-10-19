@@ -1,4 +1,4 @@
-import { ScopeType } from "../../types/ScopeType";
+import { ScopeType } from "./ScopeType";
 
 export type TimePickerSliderConfig = {
   data: {

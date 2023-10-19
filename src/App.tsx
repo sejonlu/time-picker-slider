@@ -1,6 +1,6 @@
 import { Container } from "@mui/material";
 import { TimePickerSlider } from "./components/TimeSliderPicker";
-import { TimePickerSliderConfig } from "./components/TimeSliderPicker/TimePickerSliderConfig";
+import { TimePickerSliderConfig } from "./types/TimePickerSliderConfig";
 
 const config: TimePickerSliderConfig = {
   data: {

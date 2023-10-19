@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Stack, Typography } from "@mui/material";
-import { TimePickerSliderConfig } from "./TimePickerSliderConfig";
+import { TimePickerSliderConfig } from "../../types/TimePickerSliderConfig";
 import { ScopePicker } from "./ScopePicker";
 import { ScopeType } from "../../types/ScopeType";
 

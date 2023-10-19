@@ -1,6 +1,6 @@
 import { FC, HTMLAttributes, useState } from "react";
 import { Box, Slider, SliderThumb, Stack } from "@mui/material";
-import { TimePickerSliderConfig } from "./TimePickerSliderConfig";
+import { TimePickerSliderConfig } from "../../types/TimePickerSliderConfig";
 import { TimePickerSliderThumb } from "./TimePickerSliderThumb";
 import { TimePickerSliderTrack } from "./TimePickerSliderTrack";
 import { ScopeType } from "../../types/ScopeType";

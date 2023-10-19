@@ -1,6 +1,6 @@
 import { FC, PropsWithChildren } from "react";
 import { Stack, Typography } from "@mui/material";
-import { TimePickerSliderConfig } from "./TimePickerSliderConfig";
+import { TimePickerSliderConfig } from "../../types/TimePickerSliderConfig";
 import { RangePicker } from "./RangePicker";
 
 type TimePickerSliderTrackProps = PropsWithChildren & {
