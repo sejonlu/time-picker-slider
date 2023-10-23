@@ -1,9 +1,10 @@
 import { FC, HTMLAttributes, useState } from "react";
-import { Box, Slider, SliderThumb, Stack } from "@mui/material";
+import { Box, SliderThumb, Stack } from "@mui/material";
 import { TimePickerSliderConfig } from "../../types/TimePickerSliderConfig";
 import { TimePickerSliderThumb } from "./TimePickerSliderThumb";
 import { TimePickerSliderTrack } from "./TimePickerSliderTrack";
 import { ScopeType } from "../../types/ScopeType";
+import { MySlider } from "./MySlider";
 
 export const Thumb: FC<HTMLAttributes<unknown>> = ({ children, ...other }) => {
   return <SliderThumb {...other}>{children}</SliderThumb>;
@@ -20,7 +21,7 @@ export const TimePickerSlider: FC<TimePickerSliderProps> = ({ config }) => {
   const [scope, setScope] = useState<ScopeType>("Day");
   return (
     <Stack>
-      <Slider marks min={0} max={12} slots={{ thumb: Thumb }} />
+      <MySlider />
       <TimePickerSliderTrack range={range} setRange={setRange} config={config}>
         <TimePickerSliderThumb
           scope={scope}
