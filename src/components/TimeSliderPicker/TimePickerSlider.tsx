@@ -21,7 +21,7 @@ export const TimePickerSlider: FC<TimePickerSliderProps> = ({ config }) => {
   const [scope, setScope] = useState<ScopeType>("Day");
   return (
     <Stack>
-      <MySlider />
+      <MySlider min={0} max={12} length={3} />
       <TimePickerSliderTrack range={range} setRange={setRange} config={config}>
         <TimePickerSliderThumb
           scope={scope}
